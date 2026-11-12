@@ -1,20 +1,36 @@
-# Sorting Algorithm Implementation
+# Sorting Algorithms in C++
+
+![C++](https://img.shields.io/badge/C%2B%2B-blue) ![Course](https://img.shields.io/badge/CS315-Algorithm%20Design%20%26%20Analysis-lightgrey)
+
 ## Overview
-This project was for my CS315 Algorithm Design and Analysis class and implements Merge, Insertion, and Quick sorting algorithms to organize Videogame datasets by their revenue.
+A C++ program that implements three classic sorting algorithms (Insertion, Quick, and Merge Sort) and uses them to order video game datasets by revenue. Built for my CS315 Algorithm Design and Analysis class.
 
 ## Algorithms Implemented
-- **Insertion Sort:** Sorts elements by inserting each into its correct position within the sorted portion of the dataset.
-- **Quick Sort:** Uses a pivot-based partitioning approach to recursively sort elements.
-- **Merge Sort:** Uses a divide-and-conquer approach to split, sort, and merge datasets.
+| Algorithm | Approach | Best | Average | Worst |
+|---|---|---|---|---|
+| Insertion Sort | Inserts each element into its place in the sorted portion | O(n) | O(n^2) | O(n^2) |
+| Quick Sort | Pivot-based partitioning, sorted recursively | O(n log n) | O(n log n) | O(n^2) |
+| Merge Sort | Divide and conquer: split, sort, merge | O(n log n) | O(n log n) | O(n log n) |
 
-## Technologies Used
-- C++
-- CSV File Handling
+The provided datasets in `data/` let you compare how each algorithm behaves on best-case and worst-case input.
+
+## Project Structure
+- `sorting.cpp`: all three algorithms and the CSV handling
+- `data/`: input CSV datasets
 
 ## How to Run
-1. Clone Repo
-2. Compile code with, g++ sorting.cpp -o Sorting
-3. run .exe file with ./sorting data\filename.csv
+```bash
+git clone https://github.com/lilBiggy101/algorithms-sorting.git
+cd algorithms-sorting
+g++ sorting.cpp -o sorting
+./sorting data/<filename>.csv
+```
+Replace `<filename>` with any CSV file in the `data/` folder. On Windows, use `sorting.exe data\<filename>.csv`.
 
-## Purpose
-This project taught me the basics of how sorting algorithms function and how to implement them within a dataset. It also helped me to understand how the analysis of these algorithms were important with datasets showing the worst and best case scenario for each algorithm.
+## Technologies
+- C++
+- CSV file handling
+
+## What I Learned
+- How insertion, quick, and merge sort work and how to implement each one on real data.
+- Why algorithm analysis matters: the same algorithm can perform very differently on best-case and worst-case inputs.
