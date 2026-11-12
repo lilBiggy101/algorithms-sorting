@@ -1,9 +1,6 @@
 # Sorting Algorithms in C++
-
-![C++](https://img.shields.io/badge/C%2B%2B-blue) ![Course](https://img.shields.io/badge/CS315-Algorithm%20Design%20%26%20Analysis-lightgrey)
-
 ## Overview
-A C++ program that implements three classic sorting algorithms (Insertion, Quick, and Merge Sort) and uses them to order video game datasets by revenue. Built for my CS315 Algorithm Design and Analysis class.
+A C++ program built for my CS315 Algorithm Design class that implements three classic sorting algorithms (Insertion, Quick, and Merge Sort) and uses them to order video game datasets by revenue. 
 
 ## Algorithms Implemented
 | Algorithm | Approach | Best | Average | Worst |
